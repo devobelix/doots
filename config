@@ -164,9 +164,6 @@ bindsym $mod+r mode "resize"
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
-bar {
-        status_command i3status
-}
 
 # Pulse Audio controls
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +5% #increase sound volume
@@ -205,21 +202,48 @@ assign [class="Spotify"] $ws10
 
 # colors
 
-# class                 border  backgr. text    indicator child_border
-client.focused          #4c7899 #285577 #f0e2ff #2e9ef4   #285577
-client.focused_inactive #333333 #5f676a #ffffff #484e50   #5f676a
-client.unfocused        #333333 #222222 #888888 #292d2e   #222222
-client.urgent           #2f343a #900000 #ffffff #900000   #900000
-client.placeholder      #000000 #0c0c0c #ffffff #000000   #0c0c0c
+set $background         #00000060
+set $border             #2C0945
+set $unborder           #251B2D
+set $unbackground       #251B2D
+set $color1             #4F1947        
+
+# bar
+
+bar {
+        colors {
+                background $background
+                # focused_workspace (0, 0, )
+        }
+        status_command i3status
+        i3bar_command i3bar -t
+}
+
+
+# class                 border          backgr.         text    indicator child_border
+client.focused          $border         $background     #ffffff #2e9ef4   #285577
+client.focused_inactive $border         $background     #ffffff #484e50   #5f676a
+client.unfocused        $unborder       $unbackground   #888888 #292d2e   #222222
+client.urgent           #2f343a         #900000         #ffffff #900000   #900000
+client.placeholder      #000000         #0c0c0c         #ffffff #000000   #0c0c0c
 
 hide_edge_borders both
+default_border none
+default_floating_border none
 # gaps 
 
-# gaps inner 10
-# gaps outer 0
-# smart_gaps on
+gaps inner 40
+gaps outer 0
+smart_gaps on
 
 exec_always compton
 exec_always flameshot
 
+exec_always ~/Desktop/terminal-customisepadding.sh
+
+for_window [class="^.*"] border pixel 0
+
 bindsym $mod+d exec dmenu_run 
+
+title_align center
+
