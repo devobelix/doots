@@ -1,4 +1,12 @@
 [global_config]
+  dbus = False
+  enabled_plugins = TerminatorThemes, LaunchpadCodeURLHandler, APTURLHandler, LaunchpadBugURLHandler
+  handle_size = 20
+  homogeneous_tabbar = False
+  inactive_color_offset = 1.0
+  scroll_tabbar = True
+  title_font = Ubuntu 25
+  title_use_system_font = False
 [keybindings]
 [layouts]
   [[default]]
@@ -11,12 +19,194 @@
 [plugins]
 [profiles]
   [[default]]
-    background_color = "#1e2127"
-    background_darkness = 0.6
+    background_color = "#28081e"
+    background_darkness = 0.25
     background_type = transparent
     cursor_color = "#fec309"
     cursor_shape = ibeam
-    foreground_color = "#abb2bf"
+    font = Roboto 15
+    foreground_color = "#f3f3f3"
     icon_bell = False
-    palette = "#4a505d:#f81141:#23974a:#fd7e57:#285bff:#8c62fd:#366f9a:#ccd5e5:#61697a:#fc4a6d:#37bd58:#f6be48:#199ffd:#fc58f6:#50acae:#ffffff"
+    palette = "#555753:#bf5757:#9de3b4:#ffa800:#c7eae4:#e18fef:#8feeef:#ffffff:#555753:#bf5757:#a6f5c5:#ffa800:#c7eae4:#e18fef:#55ffff:#ffffff"
+    scrollbar_position = hidden
+    show_titlebar = False
+  [[3024 Night]]
+    background_color = "#090300"
+    background_darkness = 0.4
+    background_type = transparent
+    cursor_color = "#a5a2a2"
+    cursor_shape = ibeam
+    font = Roboto 15
+    foreground_color = "#a5a2a2"
+    icon_bell = False
+    palette = "#090300:#db2d20:#01a252:#fded02:#01a0e4:#a16a94:#b5e4f4:#a5a2a2:#5c5855:#e8bbd0:#3a3432:#4a4543:#807d7c:#d6d5d4:#cdab53:#f7f7f7"
+    scrollbar_position = hidden
+    show_titlebar = False
+  [[Aci]]
+    background_color = "#0d1926"
+    background_darkness = 0.4
+    background_type = transparent
+    cursor_color = "#c4e9ff"
+    cursor_shape = ibeam
+    font = Ubuntu Light 15
+    foreground_color = "#b4e1fd"
+    icon_bell = False
+    palette = "#363636:#ff0883:#83ff08:#ff8308:#0883ff:#8308ff:#08ff83:#b6b6b6:#363636:#ff0883:#83ff08:#ff8308:#0883ff:#8308ff:#08ff83:#b6b6b6"
+    scrollbar_position = hidden
+    show_titlebar = False
+  [[Aco]]
+    background_color = "#1f1305"
+    background_darkness = 0.4
+    background_type = transparent
+    cursor_color = "#bae2fb"
+    cursor_shape = ibeam
+    font = Ubuntu Light 15
+    foreground_color = "#b4e1fd"
+    icon_bell = False
+    palette = "#3f3f3f:#ff0883:#83ff08:#ff8308:#0883ff:#8308ff:#08ff83:#bebebe:#474747:#ff1e8e:#8eff1e:#ff8e1e:#0883ff:#8e1eff:#1eff8e:#c4c4c4"
+    scrollbar_position = hidden
+    show_titlebar = False
+  [[AdventureTime]]
+    background_color = "#1f1d45"
+    background_darkness = 0.4
+    background_type = transparent
+    cursor_color = "#efbf38"
+    cursor_shape = ibeam
+    font = Ubuntu Light 15
+    foreground_color = "#f8dcc0"
+    icon_bell = False
+    palette = "#050404:#bd0013:#4ab118:#e7741e:#0f4ac6:#665993:#70a598:#f8dcc0:#4e7cbf:#fc5f5a:#9eff6e:#efc11a:#1997c6:#9b5953:#c8faf4:#f6f5fb"
+    scrollbar_position = hidden
+    show_titlebar = False
+  [[Afterglow]]
+    background_color = "#212121"
+    background_darkness = 0.4
+    background_type = transparent
+    cursor_color = "#d0d0d0"
+    cursor_shape = ibeam
+    font = Ubuntu Light 15
+    foreground_color = "#d0d0d0"
+    icon_bell = False
+    palette = "#151515:#ac4142:#7e8e50:#e5b567:#6c99bb:#9f4e85:#7dd6cf:#d0d0d0:#505050:#ac4142:#7e8e50:#e5b567:#6c99bb:#9f4e85:#7dd6cf:#f5f5f5"
+    scrollbar_position = hidden
+    show_titlebar = False
+  [[AlienBlood]]
+    background_color = "#0f1610"
+    background_darkness = 0.4
+    background_type = transparent
+    cursor_color = "#73fa91"
+    cursor_shape = ibeam
+    font = Ubuntu Light 15
+    foreground_color = "#637d75"
+    icon_bell = False
+    palette = "#112616:#7f2b27:#2f7e25:#717f24:#2f6a7f:#47587f:#327f77:#647d75:#3c4812:#e08009:#18e000:#bde000:#00aae0:#0058e0:#00e0c4:#73fa91"
+    scrollbar_position = hidden
+    show_titlebar = False
+  [[Argonaut]]
+    background_color = "#0e1019"
+    background_darkness = 0.4
+    background_type = transparent
+    cursor_color = "#ff0018"
+    cursor_shape = ibeam
+    font = Ubuntu Light 15
+    foreground_color = "#fffaf4"
+    icon_bell = False
+    palette = "#232323:#ff000f:#8ce10b:#ffb900:#008df8:#6d43a6:#00d8eb:#ffffff:#444444:#ff2740:#abe15b:#ffd242:#0092ff:#9a5feb:#67fff0:#ffffff"
+    scrollbar_position = hidden
+    show_titlebar = False
+  [[Arthur]]
+    background_color = "#1c1c1c"
+    background_darkness = 0.4
+    background_type = transparent
+    cursor_color = "#e2bbef"
+    cursor_shape = ibeam
+    font = Ubuntu Light 15
+    foreground_color = "#ddeedd"
+    icon_bell = False
+    palette = "#3d352a:#cd5c5c:#86af80:#e8ae5b:#6495ed:#deb887:#b0c4de:#bbaa99:#554444:#cc5533:#88aa22:#ffa75d:#87ceeb:#996600:#b0c4de:#ddccbb"
+    scrollbar_position = hidden
+    show_titlebar = False
+  [[Atom]]
+    background_color = "#161719"
+    background_darkness = 0.4
+    background_type = transparent
+    cursor_color = "#d0d0d0"
+    cursor_shape = ibeam
+    font = Ubuntu Light 15
+    foreground_color = "#c5c8c6"
+    icon_bell = False
+    palette = "#000000:#fd5ff1:#87c38a:#ffd7b1:#85befd:#b9b6fc:#85befd:#e0e0e0:#000000:#fd5ff1:#94fa36:#f5ffa8:#96cbfe:#b9b6fc:#85befd:#e0e0e0"
+    scrollbar_position = hidden
+    show_titlebar = False
+  [[AtomOneLight]]
+    background_color = "#f9f9f9"
+    background_darkness = 0.4
+    background_type = transparent
+    cursor_color = "#bbbbbb"
+    cursor_shape = ibeam
+    font = Ubuntu Light 15
+    foreground_color = "#2a2c33"
+    icon_bell = False
+    palette = "#000000:#de3e35:#3f953a:#d2b67c:#2f5af3:#950095:#3f953a:#bbbbbb:#000000:#de3e35:#3f953a:#d2b67c:#2f5af3:#a00095:#3f953a:#ffffff"
+    scrollbar_position = hidden
+    show_titlebar = False
+  [[Batman]]
+    background_color = "#1b1d1e"
+    background_darkness = 0.4
+    background_type = transparent
+    cursor_color = "#fcef0c"
+    cursor_shape = ibeam
+    font = Ubuntu Light 15
+    foreground_color = "#6f6f6f"
+    icon_bell = False
+    palette = "#1b1d1e:#e6dc44:#c8be46:#f4fd22:#737174:#747271:#62605f:#c6c5bf:#505354:#fff78e:#fff27d:#feed6c:#919495:#9a9a9d:#a3a3a6:#dadbd6"
+    scrollbar_position = hidden
+    show_titlebar = False
+  [[Cobalt Neon]]
+    background_color = "#142838"
+    background_darkness = 0.4
+    background_type = transparent
+    cursor_color = "#c4206f"
+    cursor_shape = ibeam
+    font = Ubuntu Light 15
+    foreground_color = "#8ff586"
+    icon_bell = False
+    palette = "#142631:#ff2320:#3ba5ff:#e9e75c:#8ff586:#781aa0:#8ff586:#ba46b2:#fff688:#d4312e:#8ff586:#e9f06d:#3c7dd2:#8230a7:#6cbc67:#8ff586"
+    scrollbar_position = hidden
+    show_titlebar = False
+  [[Flat]]
+    background_color = "#002240"
+    background_darkness = 0.4
+    background_type = transparent
+    cursor_color = "#e5be0c"
+    cursor_shape = ibeam
+    font = Ubuntu Light 15
+    foreground_color = "#2cc55d"
+    icon_bell = False
+    palette = "#222d3f:#a82320:#32a548:#e58d11:#3167ac:#781aa0:#2c9370:#b0b6ba:#212c3c:#d4312e:#2d9440:#e5be0c:#3c7dd2:#8230a7:#35b387:#e7eced"
+    scrollbar_position = hidden
+    show_titlebar = False
+  [[Floraverse]]
+    background_color = "#0e0d15"
+    background_darkness = 0.4
+    background_type = transparent
+    cursor_color = "#bbbbbb"
+    cursor_shape = ibeam
+    font = Ubuntu Light 15
+    foreground_color = "#dbd1b9"
+    icon_bell = False
+    palette = "#08002e:#64002c:#5d731a:#cd751c:#1d6da1:#b7077e:#42a38c:#f3e0b8:#331e4d:#d02063:#b4ce59:#fac357:#40a4cf:#f12aae:#62caa8:#fff5db"
+    scrollbar_position = hidden
+    show_titlebar = False
+  [[ForestBlue]]
+    background_color = "#051519"
+    background_darkness = 0.4
+    background_type = transparent
+    cursor_color = "#9e9ecb"
+    cursor_shape = ibeam
+    font = Ubuntu Light 15
+    foreground_color = "#e2d8cd"
+    icon_bell = False
+    palette = "#333333:#f8818e:#92d3a2:#1a8e63:#8ed0ce:#5e468c:#31658c:#e2d8cd:#3d3d3d:#fb3d66:#6bb48d:#30c85a:#39a7a2:#7e62b3:#6096bf:#e2d8cd"
+    scrollbar_position = hidden
     show_titlebar = False
